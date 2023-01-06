@@ -1,16 +1,72 @@
 body {
     background-color: hsl(212, 45%, 89%);
+    margin: 0;
+    width: 100%;
 }
 
-
 div {
-    padding: 80px 90px;
+    width: 250px;
+    height: 380px;
     background-color: white;
-    border: 1px solid black;
     /*move to center */
-    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
 }
 
 .QR-code {
-    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    color: hsl(218, 44%, 22%);
+    font-family: 'Prosto One', cursive;
+    padding: 0 10px;
+}
+
+p {
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    color: hsl(220, 15%, 55%);
+    padding: 20px 13px;
+    font-family: 'Prosto One', cursive;
+}
+
+@media screen and (max-width: 1440px) {
+    div {
+        width: 250px;
+        height: 380px;
+        background-color: white;
+        /*move to center */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+    }  
+}
+
+@media screen and (max-width: 375px) {
+    div {
+        width: 250px;
+        height: 380px;
+        background-color: white;
+        /*move to center */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+    }
 }
